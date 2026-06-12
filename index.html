@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKJH</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/zepto@1.2.0/dist/zepto.min.js"></script>
+</head>
+<body class="page">
+  <!-- ① 顶栏：全局操作 -->
+  <header class="topbar">
+    <a class="topbar__logo">失控进化</a>
+    <a class="topbar__back">返回官网 ></a>
+    <button class="topbar__download">↓</button>
+  </header>
+
+  <main class="main">
+    <!-- ② 首屏 -->
+    <section class="hero">
+      <div class="hero__bg"></div>           <!-- 背景图层 -->
+      <h1 class="hero__title">
+        <span>荒岛求生</span>
+        <span class="accent">新手站</span>
+      </h1>
+      <p class="hero__slogan">从零到活下来，从活下来到越来越强</p>
+    </section>
+
+    <!-- ③ 身份切换 -->
+    <section class="role-switch">
+      <button class="role-btn role-btn--newbie">我是新手</button>
+      <button class="role-btn role-btn--veteran">我是老手</button>
+      <div class="scroll-hint">»</div>
+    </section>
+
+    <!-- ④ 速查手册 -->
+    <section class="guide" id="guide">
+      <header class="guide__head">
+        <span class="guide__icon">?</span>
+        <h2>速查手册</h2>
+        <p>点击查看速成攻略，直接找到你现在最需要的那个答案</p>
+      </header>
+
+      <!-- 手风琴列表 -->
+      <div class="accordion" id="accordion">
+        <!-- 单项可复用 -->
+        <article class="accordion__item is-open">
+          <button class="accordion__trigger">
+            <span>如何快速回血？</span>
+            <i class="accordion__arrow"></i>
+          </button>
+          <div class="accordion__panel">
+            <p>正文…<em class="highlight">绷带</em>…</p>
+            <aside class="tip">
+              <strong>关键优先级：</strong>食物 > 绷带 > 医疗针
+            </aside>
+          </div>
+        </article>
+        <!-- 更多 item 结构相同 -->
+      </div>
+    </section>
+  </main>
+</body>
+<script src="js/main.js"></script>
+
+</html>
