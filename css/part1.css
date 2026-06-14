@@ -1,0 +1,207 @@
+.part1 {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #231918;
+}
+
+.pc-video {
+    width: 100%;
+    max-width: 100%;
+}
+
+:root {
+    --pc-nav-height: 0.36rem;
+}
+
+.part1 .logo {
+    width: 1.51rem;
+    height: 0.38rem;
+    background: url(https://game.gtimg.cn/images/rm/cp/a20260527xsz/part1/logo.png) center / contain no-repeat;
+    position: fixed;
+    left: 0.45rem;
+    top: 0.4rem;
+    z-index: 1;
+}
+
+
+@media screen and (max-device-width: 1024px) {
+    .part1 {
+        .logo {
+            display: none;
+        }
+
+        .part1-ctn {
+            width: 7.5rem;
+            height: 26.93rem;
+            background: url(https://game.gtimg.cn/images/rm/cp/a20260527xsz/m/part1/part1_bg.jpg) center / contain no-repeat;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            min-height: 26.93rem;
+            background-position: top;
+            background-size: cover;
+
+            .part1-text-ctn {
+                position: absolute;
+                top: 8.6rem;
+                left: 50%;
+                transform: translateX(-50%);
+                font-family: 'text_s';
+                font-size: 0.18rem;
+                color: #fff;
+
+                .part1-text {
+                    -webkit-animation: upIn 0.5s ease forwards;
+                    animation: upIn 0.5s ease forwards;
+                    -webkit-animation-delay: 0.45s;
+                    animation-delay: 0.45s;
+                    opacity: 0;
+                }
+
+            }
+
+            .part1-btn-ctn {
+                position: absolute;
+                display: flex;
+                top: 9.2rem;
+                width: 5.5rem;
+                left: 50%;
+                transform: translate(-50%, 0);
+                align-items: center;
+                justify-content: space-between;
+                height: 0.88rem;
+
+                .btn-new {
+                    -webkit-animation: upIn 0.5s ease forwards;
+                    animation: upIn 0.5s ease forwards;
+                    -webkit-animation-delay: 0.15s;
+                    animation-delay: 0.15s;
+                    opacity: 0;
+                    width: 2.57rem;
+                    height: 0.61rem;
+                    background: url(../static/m/part1/btn_new.png) center / contain no-repeat;
+                }
+
+                .btn-old {
+                    -webkit-animation: upIn 0.5s ease forwards;
+                    animation: upIn 0.5s ease forwards;
+                    -webkit-animation-delay: 0.15s;
+                    animation-delay: 0.3s;
+                    opacity: 0;
+                    width: 2.57rem;
+                    height: 0.61rem;
+                    background: url(../static/m/part1/btn_old.png) center / contain no-repeat;
+                }
+
+
+            }
+
+            .part1-scroll-tips {
+                position: absolute;
+                top: 10.6rem;
+                margin-left: -0.1rem;
+                width: 0.25rem;
+                height: 0.22rem;
+                background: url(../static/part1/scroll_tips.png) center / contain no-repeat;
+                left: 50%;
+                animation: floatUp 1s ease infinite alternate;
+            }
+
+            /* 暂时不知道有什么用 但他的子元素占位了0.4rem 后面的ab布局先加了0.4rem
+            .part1-old-ctn{
+                top: 6.55rem;
+                width: 7rem;
+                z-index: 1;
+                position: absolute;
+                left: 50%;
+                -webkit-transform: translate(-50%, 0);
+                transform: translate(-50%, 0);
+                display: none;
+                top: calc(6.5rem - var(--pc-nav-height));
+                width: 13.62rem;
+                height: 3.32rem;
+            } */
+
+            .part-help-ctn {
+                position: absolute;
+                left: 50%;
+                -webkit-transform: translate(-50%, 0);
+                transform: translate(-50%, 0);
+                top: calc(10.8rem - var(--pc-nav-height));
+                width: 7rem;
+                color: #fff;
+                padding-bottom: 0.5rem;
+                margin: 0 auto;
+                margin-top: 1.23rem;
+
+                .part-help-hd {
+                    display: flex;
+                    align-items: center;
+                    font-family: 'text_s';
+                    cursor: pointer;
+                    position: relative;
+                    font-size: 0.32rem;
+                    font-weight: 700;
+                    line-height: 0.42rem;
+
+                    .manual-i {
+                        margin-right: 0.1rem;
+                        width: 0.37rem;
+                        height: 0.3rem;
+                        background: url(../static/m/part1/manual_i.png) center / contain no-repeat;
+                    }
+                }
+
+                .part-help-sub {
+                    margin-left: 0rem;
+                    font-size: 0.22rem;
+                    color: #9b9b9b;
+                }
+
+                .help-drawer-list {
+                    margin-top: 0.2rem;
+                    padding-bottom: 0.13rem;
+
+                    .help-drawer-item {
+                        position: relative;
+                        margin-bottom: 0.13rem;
+                        background: rgba(62, 51, 49, 0.8);
+                        border: 0.01rem solid #c53f25;
+                        transition: background 0.3s ease;
+                        cursor: pointer;
+
+                        .help-drawer-trigger {
+                            position: relative;
+                            text-indent: 0.2rem;
+                            font-size: 0.24rem;
+                            line-height: 0.6rem;
+                            cursor: pointer;
+                            width: 6.99rem;
+                            height: 0.66rem;
+                            background: url("../static/m/manual_item_bg.png") center / contain no-repeat;
+                        }
+
+                        .help-drawer-trigger:after {
+                            content: "";
+                            position: absolute;
+                            right: 0.22rem;
+                            top: 0.16rem;
+                            width: 0.19rem;
+                            height: 0.28rem;
+                            background: url("../static/m/part1/manual_item_more.png") center / contain no-repeat;
+                            transform: rotate(0deg);
+                            transition: transform 0.28s ease, -webkit-transform 0.28s ease;
+                            text-indent: 0.2rem;
+                            font-size: 0.24rem;
+                            line-height: 0.6rem;
+                            cursor: pointer;
+                            color: #f4f1ec !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}

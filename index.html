@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SKJH</title>
   <link rel="stylesheet" href="css/index.css">
+  <!-- <link rel="stylesheet" href="css/index_eg.css"> -->
+
+  <link rel="stylesheet" href="css/part1.css">
   <script src="https://cdn.jsdelivr.net/npm/zepto@1.2.0/dist/zepto.min.js"></script>
 </head>
+
 <body class="page">
   <!-- ① 顶栏：全局操作 -->
-  <header class="topbar">
-    <a class="btn btn-back-home alone" href="https://skjh.qq.com"></a>
+  <header>
+
   </header>
 
-  <main class="main">
+  <main>
     <!-- ② 首屏 -->
-    <section class="hero">
-      <div class="hero__bg"></div>           <!-- 背景图层 -->
-      <h1 class="hero__title">
-        <span>荒岛求生</span>
-        <span class="accent">新手站</span>
-      </h1>
-      <p class="hero__slogan">从零到活下来，从活下来到越来越强</p>
-    </section>
 
-    <!-- ③ 身份切换 -->
-    <section class="role-switch">
-      <button class="role-btn role-btn--newbie">我是新手</button>
-      <button class="role-btn role-btn--veteran">我是老手</button>
-      <div class="scroll-hint">»</div>
-    </section>
-
-    <!-- ④ 速查手册 -->
-    <section class="guide" id="guide">
-      <header class="guide__head">
-        <span class="guide__icon">?</span>
-        <h2>速查手册</h2>
-        <p>点击查看速成攻略，直接找到你现在最需要的那个答案</p>
-      </header>
-
-      <!-- 手风琴列表 -->
-      <div class="accordion" id="accordion">
-        <!-- 单项可复用 -->
-        <article class="accordion__item is-open">
-          <button class="accordion__trigger">
-            <span>如何快速回血？</span>
-            <i class="accordion__arrow"></i>
-          </button>
-          <div class="accordion__panel">
-            <p>正文…<em class="highlight">绷带</em>…</p>
-            <aside class="tip">
-              <strong>关键优先级：</strong>食物 > 绷带 > 医疗针
-            </aside>
+    <a class="btn btn-back-home" href="https://skjh.qq.com"></a>
+    <div class="part-ctn part1">
+      <div class="logo"></div>
+      <div class="part1-ctn">
+        <div class="part1-text-ctn">
+          <div class="part1-text">从零到活下来，从活下来到越来越强</div>
+        </div>
+        <div class="part1-btn-ctn">
+          <div class="btn btn-new"></div>
+          <div class="btn btn-old"></div>
+        </div>
+        <div class="part1-scroll-tips">
+        </div>
+        <div class="part-help-ctn">
+          <div class="part-help-hd">
+            <div class="manual-i"></div>
+            速查手册
           </div>
-        </article>
-        <!-- 更多 item 结构相同 -->
+          <div class="part-help-sub">
+            点击查看速成攻略，直接找到你现在最需要的那个答案
+          </div>
+          <div class="help-drawer-list">
+              <div class="help-drawer-item">
+                <div class="help-drawer-trigger text_s">如何快速回血？</div>
+              </div>
+              <div class="help-drawer-item">
+                <div class="help-drawer-trigger text_s">如何快速回血？</div>
+              </div>
+              <div class="help-drawer-item">
+                <div class="help-drawer-trigger text_s">如何快速回血？</div>
+              </div>
+              <div class="help-drawer-item">
+                <div class="help-drawer-trigger text_s">如何快速回血？</div>
+              </div>
+          </div>
+
+        </div>
       </div>
-    </section>
+
+    </div>
+    <!-- <video class="pc-video" src="./static/video.mp4" muted loop autoplay></video>           -->
+
+
+
   </main>
 </body>
 <script src="js/main.js"></script>
