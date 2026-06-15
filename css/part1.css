@@ -1,18 +1,91 @@
+/* PC 端导航高度偏移量，移动端在 @media 内覆盖为 0.36rem */
+:root {
+    --pc-nav-height: 0rem;
+}
+
+/* part1 首屏容器 */
 .part1 {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
     background-color: #231918;
+
+    /* PC 首屏内容区：背景图 + 视频 + 按钮 + 文案 */
+    .part1-ctn {
+        background: url(../static/part1/part1_bg.jpg) center / contain no-repeat;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        min-height: 16.52rem;
+        background-position: top;
+        background-size: cover;
+
+        /* 顶部背景视频，1920 设计稿尺寸居中 */
+        .video {
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+            width: 19.2rem;
+            height: 10.8rem;
+            top: 0;
+        }
+
+        /* 新手 / 老手入口按钮 */
+        .part1-btn-ctn {
+            display: flex;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            align-items: center;
+            justify-content: space-between;
+            top: calc(8.05rem - var(--pc-nav-height));
+            width: 7.96rem;
+            height: 0.88rem;
+
+            .btn-new {
+                animation: upIn 0.5s ease forwards;
+                -webkit-animation-delay: 0.15s;
+                animation-delay: 0.15s;
+                width: 3.71rem;
+                height: 0.88rem;
+                background: url(../static/part1/btn_new.png) center / contain no-repeat;
+            }
+
+            .btn-old {
+                animation: upIn 0.5s ease forwards;
+                -webkit-animation-delay: 0.3s;
+                animation-delay: 0.3s;
+                width: 3.71rem;
+                height: 0.88rem;
+                background: url(../static/part1/btn_old.png) center / contain no-repeat;
+            }
+
+        }
+
+        /* 首屏 slogan 文案 */
+        .part1-text-ctn {
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+            top: calc(9.15rem - var(--pc-nav-height));
+            font-family: 'text_s';
+            font-size: 0.21rem;
+
+            .part1-text {
+                display: block;
+                animation: upIn 0.5s ease forwards;
+                -webkit-animation-delay: 0.45s;
+                animation-delay: 0.45s;
+            }
+        }
+    }
+
+
 }
 
-.pc-video {
-    width: 100%;
-    max-width: 100%;
-}
 
-:root {
-    --pc-nav-height: 0.36rem;
-}
 
 .part1 .logo {
     width: 1.51rem;
@@ -26,6 +99,9 @@
 
 
 @media screen and (max-device-width: 1024px) {
+    :root {
+        --pc-nav-height: 0.36rem;
+    }
 
     .part1 {
         .logo {
