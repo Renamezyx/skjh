@@ -26,6 +26,7 @@
 
 
 @media screen and (max-device-width: 1024px) {
+
     .part1 {
         .logo {
             display: none;
@@ -198,10 +199,49 @@
                             cursor: pointer;
                             color: #f4f1ec !important;
                         }
+
+                        /* 展开态：旋转 trigger 右侧箭头（伪元素无法用 JS 直接操作） */
+                        &.is-open .help-drawer-trigger:after {
+                            transform: rotate(90deg);
+                        }
+
+                        /* 手风琴内容区：默认收起，JS 动态设置 max-height */
+                        .help-drawer-content {
+                            overflow: hidden;
+                            background: #221c1c;
+                            transition: max-height 0.28s ease;
+                            max-height: 0px;
+
+                            .help-drawer-inner {
+                                padding: 0.25rem 0.1rem 0.34rem 0.34rem;
+                                font-size: 0.22rem;
+                                line-height: 150%;
+                                color: #9b9b9b;
+                                font-family: 'text';
+
+                                .color {
+                                    font-family: 'text';
+                                    color: #c53f25;
+                                }
+
+                                .shu {
+                                    display: inline-block;
+                                    margin-right: 0.05rem;
+                                    width: 0.05rem;
+                                    height: 0.2rem;
+                                    background-color: #c53f25;
+                                    transform: translateY(0.02rem);
+                                    font-size: 0.22rem;
+                                    line-height: 150%;
+                                    color: #9b9b9b;
+                                    font-family: 'text';
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
     }
-}
+
 }
