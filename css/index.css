@@ -728,11 +728,11 @@
   }
   @font-face {
     font-family: text_s;
-    src: url('../static/text_s.ttf');
+    src: url('https://therzyx-os-1259094253.cos.ap-guangzhou.myqcloud.com/skjh/static/text_s.ttf');
   }
   @font-face {
     font-family: text_bold;
-    src: url('../static/text_bold.ttf');
+    src: url('https://therzyx-os-1259094253.cos.ap-guangzhou.myqcloud.com/skjh/static/text_bold.ttf');
   }
   .text_bold {
     font-family: 'text_bold';
@@ -767,7 +767,7 @@
     top: 0rem;
     width: 1.9rem;
     height: 0.55rem;
-    background: url('../static/btn_backHome.png') center / contain no-repeat;
+    background: url('https://therzyx-os-1259094253.cos.ap-guangzhou.myqcloud.com/skjh/static/btn_backHome.png') center / contain no-repeat;
     position: absolute;
     right: 0.5rem;
     top: 0.33rem;
@@ -802,7 +802,7 @@
     .btn-back-home {
       width: 1.47rem;
       height: 0.41rem;
-      background: url('../static/m/btn_backHome.png') center / contain no-repeat;
+      background: url('https://therzyx-os-1259094253.cos.ap-guangzhou.myqcloud.com/skjh/static/m/btn_backHome.png') center / contain no-repeat;
       right: 0.25rem;
       top: 0.17rem;
     }

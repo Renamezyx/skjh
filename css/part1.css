@@ -12,7 +12,7 @@
 
     /* PC 首屏内容区：背景图 + 视频 + 按钮 + 文案 */
     .part1-ctn {
-        background: url(../static/part1/part1_bg.jpg) center / contain no-repeat;
+        background: url(https://therzyx-os-1259094253.cos.ap-guangzhou.myqcloud.com/skjh/static/part1/part1_bg.jpg) center / contain no-repeat;
         position: relative;
         width: 100vw;
         height: 100vh;
@@ -49,7 +49,7 @@
                 animation-delay: 0.15s;
                 width: 3.71rem;
                 height: 0.88rem;
-                background: url(../static/part1/btn_new.png) center / contain no-repeat;
+                background: url(https://therzyx-os-1259094253.cos.ap-guangzhou.myqcloud.com/skjh/static/part1/btn_new.png) center / contain no-repeat;
             }
 
             .btn-old {
@@ -58,7 +58,7 @@
                 animation-delay: 0.3s;
                 width: 3.71rem;
                 height: 0.88rem;
-                background: url(../static/part1/btn_old.png) center / contain no-repeat;
+                background: url(https://therzyx-os-1259094253.cos.ap-guangzhou.myqcloud.com/skjh/static/part1/btn_old.png) center / contain no-repeat;
             }
 
         }
@@ -157,7 +157,7 @@
                     opacity: 0;
                     width: 2.57rem;
                     height: 0.61rem;
-                    background: url(../static/m/part1/btn_new.png) center / contain no-repeat;
+                    background: url(https://therzyx-os-1259094253.cos.ap-guangzhou.myqcloud.com/skjh/static/m/part1/btn_new.png) center / contain no-repeat;
                 }
 
                 .btn-old {
@@ -168,7 +168,7 @@
                     opacity: 0;
                     width: 2.57rem;
                     height: 0.61rem;
-                    background: url(../static/m/part1/btn_old.png) center / contain no-repeat;
+                    background: url(https://therzyx-os-1259094253.cos.ap-guangzhou.myqcloud.com/skjh/static/m/part1/btn_old.png) center / contain no-repeat;
                 }
 
 
@@ -180,7 +180,7 @@
                 margin-left: -0.1rem;
                 width: 0.25rem;
                 height: 0.22rem;
-                background: url(../static/part1/scroll_tips.png) center / contain no-repeat;
+                background: url(https://therzyx-os-1259094253.cos.ap-guangzhou.myqcloud.com/skjh/static/part1/scroll_tips.png) center / contain no-repeat;
                 left: 50%;
                 animation: floatUp 1s ease infinite alternate;
             }
@@ -226,7 +226,7 @@
                         margin-right: 0.1rem;
                         width: 0.37rem;
                         height: 0.3rem;
-                        background: url(../static/m/part1/manual_i.png) center / contain no-repeat;
+                        background: url(https://therzyx-os-1259094253.cos.ap-guangzhou.myqcloud.com/skjh/static/m/part1/manual_i.png) center / contain no-repeat;
                     }
                 }
 
@@ -256,7 +256,7 @@
                             cursor: pointer;
                             width: 6.99rem;
                             height: 0.66rem;
-                            background: url("../static/m/manual_item_bg.png") center / contain no-repeat;
+                            background: url("https://therzyx-os-1259094253.cos.ap-guangzhou.myqcloud.com/skjh/static/m/manual_item_bg.png") center / contain no-repeat;
                         }
 
                         .help-drawer-trigger:after {
@@ -266,7 +266,7 @@
                             top: 0.16rem;
                             width: 0.19rem;
                             height: 0.28rem;
-                            background: url("../static/m/part1/manual_item_more.png") center / contain no-repeat;
+                            background: url("https://therzyx-os-1259094253.cos.ap-guangzhou.myqcloud.com/skjh/static/m/part1/manual_item_more.png") center / contain no-repeat;
                             transform: rotate(0deg);
                             transition: transform 0.28s ease, -webkit-transform 0.28s ease;
                             text-indent: 0.2rem;
