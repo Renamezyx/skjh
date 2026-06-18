@@ -27,3 +27,6 @@ dist/
 # Misc
 *.tmp
 *.bak
+
+# cdn file
+static/
