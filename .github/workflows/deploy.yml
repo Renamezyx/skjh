@@ -12,13 +12,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Debug key
-        run: echo "${{ secrets.SERVER_SSH_KEY }}" | head -n 5
-      - name: Write key to file
-        run: |
-          echo "${{ secrets.SERVER_SSH_KEY }}" > key.pem
-          chmod 600 key.pem
-          ssh-keygen -lf key.pem
       - name: Deploy to Server
         uses: appleboy/scp-action@v0.1.7
         with:
